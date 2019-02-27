@@ -1,0 +1,15 @@
+1) mvn compile
+2) mvn exec:java -Dexec.mainClass="bgu.spl171.net.test.TestSpl171Ass3" -Dexec.args="<Folder with Client and Server subfolder below> <port no> <outputfile name> [group no] [true]"
+this means group no and the true at the end are optional. Further information avilable in the only file with a main function... (TestSpl171Ass3.java)
+
+Error running server:
+Replace mvn at TestServer.java (runners folder) with the full path of mvn. for example, in the labs its:
+/home/studies/course/spl161/java/mvn/bin/mvn
+You can see that by doing ls ~/bin/mvn. its just a link to the full path above.
+
+General errors:
+1) make sure mvn compile worked properly. if needed run mvn clean before.
+2) note that in the labs step 2 starts with ~/bin/mvn
+3) try using the full path to your assignments folder. if you are not sure what the full path is, go into the folder and run a pwd command
+
+This code wasn't meant for so many users, it was built to do the job. Even though, it is very well documented and constructed such that the TestSuite is responsible for running all the proper tests. The actual test classes include a VERY simple function that has a java doc specifiying point adjusment within it.
